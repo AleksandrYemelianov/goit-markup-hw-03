@@ -2,13 +2,17 @@
 :root {
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
+  /* Цвет КНОПКИ */
   --accent-color: #2196f3;
   --button-color: #f5f4fa;
+  --secondary-btn-color: #188ce8;
   --primary-white-color: #ffffff;
+  /* Цвет фон ГЕРОЙ и ФУТЕР */
+  --primary-bg-color: #2f303a;
+  /* Цвет тел и почта ФУТЕР */
+  --telemail-footer-color: rgba(255, 255, 255, 0.6);
 }
-/* Цвет фона ГЕРОЙ #2F303A */
-/* Цвет почта и номер в ФУТУРЕ rgba(255, 255, 255, 0,6);*/
-/* Цвет кнопки ГЕРОЙ #188CE8 */
+
 /* Raleway    bold-700
    Roboto     normal-400    500;    bold-700     900  */
 
@@ -19,7 +23,25 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
+/* Сброс стилей заголовка и списков */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
 
+/* Общие стили containe и section */
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid greenyellow;
+}
 /* Скрытие ПРАВИЛЬНОЕ*/
 .visually-hidden {
   position: absolute;
@@ -34,11 +56,6 @@ body {
   margin: -1px;
 }
 
-/* Чтобы правильно спрятать элемент нужно:
-1. Убрать из a11y-дерева: aria-hidden="true"
-2. Исключить из порядка навигации с клавиатуры: tabindex="-1"
-3. Скрыть визуально: class="visually-hidden" */
-
 /* Лого */
 .logo {
   color: var(--primary-text-color);
@@ -52,11 +69,6 @@ body {
 .logo-accent {
   color: var(--accent-color);
 }
-
-/* .logo:hover,
-.logo:focus {
-  color: var(--accent-color);
-} */
 
 /* Навигация */
 .link {
@@ -108,7 +120,7 @@ body {
 /* Герой */
 
 .hero {
-  background-color: #2f303a;
+  background-color: var(--primary-bg-color);
   text-align: center;
 }
 .hero-title {
@@ -133,7 +145,7 @@ body {
 
 .button-accent:hover,
 .button-accent:focus {
-  background-color: #188ce8;
+  background-color: var(--secondary-btn-color);
 }
 
 /* Особенности */
@@ -178,7 +190,7 @@ body {
 
 /* Футер */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--primary-bg-color);
 }
 .logo-footer {
   color: var(--primary-white-color);
@@ -197,7 +209,7 @@ body {
 }
 
 .footer-email-tel {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--telemail-footer-color);
 
   font-style: normal;
   font-size: 14px;
