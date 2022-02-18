@@ -196,6 +196,9 @@ img {
   padding-bottom: 200px;
 }
 
+.hero-bg {
+}
+
 .hero-title {
   display: block;
   margin-bottom: 30px;
@@ -298,8 +301,8 @@ img {
 }
 
 .team-wrapper {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-title {
